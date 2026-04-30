@@ -1,5 +1,7 @@
 # Screenshot MCP
 
+[English](./README.md) | 中文
+
 Windows 屏幕截图 **MCP Server**，使用 **Windows Graphics Capture (WGC)** 实现类似 OBS 的窗口捕获，支持 **MCP Streamable HTTP** 远程调用。
 
 ## 功能特性
@@ -13,8 +15,11 @@ Windows 屏幕截图 **MCP Server**，使用 **Windows Graphics Capture (WGC)** 
 - **多显示器** — 自动检测或指定显示器索引
 
 ## 它能做什么
+
 最常见的用法是可以在你的群机器人里使用，能够让大家随时能来视奸你在做什么。
+
 当然，你肯定是不希望你的隐私内容也被泄露出去，所以可以让 AI **只能发送你特定类型的窗口**画面，例如游戏。
+
 可以让 AI 先调用`list_windows`，获取正在运行的窗口，让它只能选择游戏类型的窗口画面然后发送截图。
 
 ## 快速开始

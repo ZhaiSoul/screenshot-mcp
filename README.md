@@ -1,5 +1,7 @@
 # Screenshot MCP
 
+English | [中文](./README_ZH.md)
+
 Windows screenshot **MCP Server** using **Windows Graphics Capture (WGC)** for OBS-like window capture, with **MCP Streamable HTTP** remote access support.
 
 ## Features
