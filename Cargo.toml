@@ -7,7 +7,7 @@ description = "Windows screenshot MCP Server with OBS-style WGC capture"
 repository = "https://github.com/zhaisoul/screenshot-mcp"
 
 [dependencies]
-windows-sys = { version = "0.59", features = [
+windows-sys = { version = "0.61.2", features = [
     "Win32_Foundation",
     "Win32_Graphics_Gdi",
     "Win32_UI_WindowsAndMessaging",
@@ -15,7 +15,7 @@ windows-sys = { version = "0.59", features = [
     "Win32_System_Diagnostics_ToolHelp",
     "Win32_Graphics_Dwm",
 ] }
-windows = { version = "0.61", features = [
+windows = { version = "0.62.2", features = [
     "Win32_Foundation",
     "Win32_Graphics_Dxgi",
     "Win32_Graphics_Dxgi_Common",
@@ -23,7 +23,7 @@ windows = { version = "0.61", features = [
     "Win32_Graphics_Direct3D11",
     "Win32_Graphics_Gdi",
 ] }
-windows-capture = "1.5"
+kscreenshot = "0.1"
 image = "0.25"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
@@ -32,9 +32,9 @@ regex = "1"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 clap = { version = "4", features = ["derive"] }
-winreg = "0.52"
-axum = "0.7"
+winreg = "0.56.0"
+axum = "0.8.9"
 tower-http = { version = "0.5", features = ["cors"] }
-tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "sync"] }
+tokio = { version = "1.52.2", features = ["rt-multi-thread", "macros", "net", "sync"] }
 futures-util = "0.3"
 async-stream = "0.3"

@@ -116,7 +116,7 @@ pub fn enumerate_windows(include_minimized: bool) -> Vec<WindowInfo> {
     windows
 }
 
-unsafe extern "system" fn enum_windows_callback(hwnd: HWND, lparam: LPARAM) -> BOOL {
+unsafe extern "system" fn enum_windows_callback(hwnd: HWND, lparam: LPARAM) -> i32 {
     let windows = &mut *(lparam as *mut Vec<WindowInfo>);
 
     // Skip invisible windows
@@ -250,7 +250,7 @@ unsafe extern "system" fn enum_monitors_callback(
     _hdc: HDC,
     _lprc_clip: *mut RECT,
     lparam: LPARAM,
-) -> BOOL {
+) -> i32 {
     let monitors = &mut *(lparam as *mut Vec<MonitorInfo>);
 
     let mut info: MONITORINFOEXW = std::mem::zeroed();
